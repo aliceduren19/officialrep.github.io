@@ -1,4 +1,15 @@
+const an= document.querySelector('#christmas');
 
+const friday= new Date();
+let dayOfMonth;
+dayOfMonth=friday.getMonth();
+if (dayOfMonth == 11) {
+   an.classList.toggle("christs");
+}
+else{
+    an.classList.remove("christs");
+    an.style.display="none";
+}
 //Wednesday, 24 July 2020
 const dayNames=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 let dayObj= new Date()

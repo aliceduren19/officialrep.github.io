@@ -1,12 +1,24 @@
+
 body {
-    background: radial-gradient(circle, rgb(79, 219, 161) 0%, rgba(28,9,121,1) 56%, rgba(36,0,6,1) 100%);
+    background: url("https://ak.picdn.net/shutterstock/videos/1010552948/thumb/1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     margin: $margin;
     max-width: 90%;
     height: auto;
     font-family: $fontFamily;
     
 }
-
+#content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#darest{
+    grid-column: 2;
+}
   h1{
     text-align: center;
     text-shadow: $tShadow;
@@ -21,8 +33,35 @@ body {
     font-size: $heavyF;
     transition: $transTime;
   }
-  
-  
+  #christmas{
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ #christmas img{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 500px;
+    height: 850px;
+    object-fit: cover;
+    box-shadow: $bShadow;
+    display: block;
+    border-radius: 0;
+ }
+  #christmas h2{
+    text-shadow: 2px 2px 3px #FF0000,-2px -2px 5px #00ad1d;
+    color:$textcolor;
+    border-radius: $border;
+    font-size: 3em;
+    margin: 3em;
+    
+  }
+  .christ{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    
+  }
 a{
     text-decoration: none;
     font-size: 1em;
@@ -61,7 +100,10 @@ img {
     
 }
 footer{
-    width: $sectionWidth;
+    position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 2.5rem; 
     text-align: center;
     text-shadow: $tShadow;
     box-shadow: $bShadow;
@@ -70,7 +112,6 @@ footer{
     margin: 1em auto;
     display: block;
     background-color: $thisColor;
-    text-align: $center;
     padding:$padding;
     transition: $transTime;
 }
@@ -82,6 +123,9 @@ img:hover{
 h1:hover{
     padding: $transPadding;
     font-size: 2.1rem;
+}
+#christmas img:hover{
+    width: 400px;
 }
 #projects:hover{
     padding: $transPadding;

@@ -305,11 +305,22 @@ template {
   display: none; }
 
 body {
-  background: radial-gradient(circle, #4fdba1 0%, #1c0979 56%, #240006 100%);
+  background: url("https://ak.picdn.net/shutterstock/videos/1010552948/thumb/1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0 auto;
   max-width: 90%;
   height: auto;
   font-family: "Lato", sans-serif; }
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+#darest {
+  grid-column: 2; }
 
 h1 {
   text-align: center;
@@ -324,6 +335,33 @@ h1 {
   padding: 1.5rem;
   font-size: 900;
   transition: 0.5s; }
+
+#christmas {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+#christmas img {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 500px;
+  height: 850px;
+  object-fit: cover;
+  box-shadow: 7px 5px 14px black;
+  display: block;
+  border-radius: 0; }
+
+#christmas h2 {
+  text-shadow: 2px 2px 3px #FF0000,-2px -2px 5px #00ad1d;
+  color: aliceblue;
+  border-radius: 8%;
+  font-size: 3em;
+  margin: 3em; }
+
+.christ {
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1; }
 
 a {
   text-decoration: none;
@@ -361,7 +399,10 @@ img {
   transition: 0.5s; }
 
 footer {
-  width: 300px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 2.5rem;
   text-align: center;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   box-shadow: 7px 5px 14px black;
@@ -370,7 +411,6 @@ footer {
   margin: 1em auto;
   display: block;
   background-color: black;
-  text-align: center;
   padding: 1.5rem;
   transition: 0.5s; }
 
@@ -381,6 +421,9 @@ img:hover {
 h1:hover {
   padding: 2rem;
   font-size: 2.1rem; }
+
+#christmas img:hover {
+  width: 400px; }
 
 #projects:hover {
   padding: 2rem;
