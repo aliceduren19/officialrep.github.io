@@ -329,7 +329,7 @@ iframe {
 
 h1 {
   text-align: center;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 3px #FF0000, -2px -2px 5px #00ad1d;
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;
@@ -358,7 +358,7 @@ h1 {
   transition: 0.5s; }
 
 #christmas h2 {
-  text-shadow: 2px 2px 3px #FF0000,-2px -2px 5px #00ad1d;
+  text-shadow: 2px 2px 3px #FF0000, -2px -2px 5px #00ad1d;
   color: aliceblue;
   border-radius: 8%;
   font-size: 3em;
@@ -378,7 +378,7 @@ a:hover {
   color: hotpink; }
 
 #projects {
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 3px #FF0000, -2px -2px 5px #00ad1d;
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;
@@ -392,7 +392,7 @@ a:hover {
 ul, li, a {
   font-weight: 300;
   color: aliceblue;
-  list-style: none;
+  list-style-image: url(/images/snowflake-png-5.png);
   padding: 0;
   margin: 0; }
 
@@ -407,7 +407,7 @@ img {
 
 footer {
   text-align: center;
-  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-shadow: 2px 2px 3px #FF0000, -2px -2px 5px #00ad1d;
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;

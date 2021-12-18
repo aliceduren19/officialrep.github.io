@@ -26,7 +26,7 @@ iframe{
 }
   h1{
     text-align: center;
-    text-shadow: $tShadow;
+    text-shadow: $christShadow;
     box-shadow: $bShadow;
     color:$textcolor;
     border-radius: $border;
@@ -55,7 +55,7 @@ iframe{
     transition: $transTime;
  }
   #christmas h2{
-    text-shadow: 2px 2px 3px #FF0000,-2px -2px 5px #00ad1d;
+    text-shadow: $christShadow;
     color:$textcolor;
     border-radius: $border;
     font-size: 3em;
@@ -73,10 +73,12 @@ a{
     font-size: 1em;
 }
 a:hover {
-    color: hotpink;}
+    color: hotpink;
+}
+
 #projects
   {
-    text-shadow: $tShadow;
+    text-shadow: $christShadow;
     box-shadow: $bShadow;
     color:$textcolor;
     border-radius: $border;
@@ -91,7 +93,7 @@ a:hover {
     ul, li,a{ 
         font-weight: $lightF;
         color:$textcolor;
-        list-style: none;
+        list-style-image: url(/images/snowflake-png-5.png);
         padding: 0;
         margin: 0;
         }
@@ -111,7 +113,7 @@ footer{
 //   width: 90%;
 //   height: 2.5rem; 
     text-align: center;
-    text-shadow: $tShadow;
+    text-shadow: $christShadow;
     box-shadow: $bShadow;
     color:$textcolor;
     border-radius: $border;
