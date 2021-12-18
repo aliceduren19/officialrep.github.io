@@ -1,3 +1,9 @@
 /* all varaibles start with a dollar sign
 */
-$primaryColor: #17e44c;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+$primaryColor: #6e59e2;
+$fontFamily: 'Quicksand', sans-serif;
+$regularWeight:300;
+$heavyWeight:700;
+
+$gutter: 2%;
