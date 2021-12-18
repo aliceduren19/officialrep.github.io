@@ -1,3 +1,63 @@
+body {
+    text-align: center;
+    background: radial-gradient(circle, rgba(124,70,171,1) 0%, rgba(28,9,121,1) 56%, rgba(36,0,6,1) 100%);
+    margin: $margin;
+    max-width: 90%;
+    font-family: $fontFamily;
+}
+  h1{
+    text-shadow: $tShadow;
+      box-shadow: $bShadow;
+      color:$textcolor;
+    border-radius: $border;
+    margin: 1em auto;
+    display: block;
+    width: fit-content;
+    background-color: $thisColor;
+    padding:$padding;
+  }
+  nav ,ul, li,a{
+    text-decoration: none;
+    color:$textcolor;
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  a:hover {
+    color: hotpink;}
+  #projects
+  {
+    text-shadow: $tShadow;
+    box-shadow: $bShadow;
+    color:$textcolor;
+    border-radius: $border;
+    padding:$padding;
+    width: fit-content;
+    height: fit-content;
+    margin: 1em auto;
+    width: fit-content;
+    background-color: $thisColor;
+    }
+
 img {
+    width: 300px;
+    height: auto;
+    box-shadow: $bShadow;
+    margin: 1em auto;
+    display: block;
     border-radius: 50%;
+    
+}
+footer{
+    text-shadow: $tShadow;
+    box-shadow: $bShadow;
+    color:$textcolor;
+    border-radius: $border;
+    width: fit-content;
+    margin: 1em auto;
+    display: block;
+    background-color: $thisColor;
+    text-align: $center;
+    padding:$padding;
 }
