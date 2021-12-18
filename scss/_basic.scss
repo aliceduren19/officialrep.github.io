@@ -1,45 +1,55 @@
 body {
-    text-align: center;
-    background: radial-gradient(circle, rgba(124,70,171,1) 0%, rgba(28,9,121,1) 56%, rgba(36,0,6,1) 100%);
+    background: radial-gradient(circle, rgb(79, 219, 161) 0%, rgba(28,9,121,1) 56%, rgba(36,0,6,1) 100%);
     margin: $margin;
     max-width: 90%;
+    height: auto;
     font-family: $fontFamily;
+    
 }
+
   h1{
+    text-align: center;
     text-shadow: $tShadow;
-      box-shadow: $bShadow;
-      color:$textcolor;
+    box-shadow: $bShadow;
+    color:$textcolor;
     border-radius: $border;
     margin: 1em auto;
     display: block;
-    width: fit-content;
+    width: $sectionWidth;
     background-color: $thisColor;
     padding:$padding;
+    font-size: $heavyF;
+    transition: $transTime;
   }
-  nav ,ul, li,a{
+  
+  
+a{
     text-decoration: none;
-    color:$textcolor;
-    list-style: none;
-    padding: 0;
-    font-size: 1.2em;
-    margin: 0;
-  }
-  a:hover {
+    font-size: 1em;
+}
+a:hover {
     color: hotpink;}
-  #projects
+#projects
   {
     text-shadow: $tShadow;
     box-shadow: $bShadow;
     color:$textcolor;
     border-radius: $border;
     padding:$padding;
-    width: fit-content;
+    width: $sectionWidth;
     height: fit-content;
     margin: 1em auto;
-    width: fit-content;
+    
     background-color: $thisColor;
+    transition: $transTime;
     }
-
+    ul, li,a{ 
+        font-weight: $lightF;
+        color:$textcolor;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        }
 img {
     width: 300px;
     height: auto;
@@ -47,17 +57,37 @@ img {
     margin: 1em auto;
     display: block;
     border-radius: 50%;
+    transition: $transTime;
     
 }
 footer{
+    width: $sectionWidth;
+    text-align: center;
     text-shadow: $tShadow;
     box-shadow: $bShadow;
     color:$textcolor;
     border-radius: $border;
-    width: fit-content;
     margin: 1em auto;
     display: block;
     background-color: $thisColor;
     text-align: $center;
     padding:$padding;
+    transition: $transTime;
+}
+img:hover{
+    border-radius: 10%;
+    width: 320px;
+
+}
+h1:hover{
+    padding: $transPadding;
+    font-size: 2.1rem;
+}
+#projects:hover{
+    padding: $transPadding;
+    font-size: $transSize;
+}
+footer:hover{
+    font-size: $transSize;
+    padding: $transPadding;
 }

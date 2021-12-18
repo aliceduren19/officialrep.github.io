@@ -305,30 +305,29 @@ template {
   display: none; }
 
 body {
-  text-align: center;
-  background: radial-gradient(circle, #7c46ab 0%, #1c0979 56%, #240006 100%);
+  background: radial-gradient(circle, #4fdba1 0%, #1c0979 56%, #240006 100%);
   margin: 0 auto;
   max-width: 90%;
+  height: auto;
   font-family: "Lato", sans-serif; }
 
 h1 {
+  text-align: center;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;
   margin: 1em auto;
   display: block;
-  width: fit-content;
+  width: 300px;
   background-color: black;
-  padding: 2rem; }
+  padding: 1.5rem;
+  font-size: 900;
+  transition: 0.5s; }
 
-nav, ul, li, a {
+a {
   text-decoration: none;
-  color: aliceblue;
-  list-style: none;
-  padding: 0;
-  font-size: 1.2em;
-  margin: 0; }
+  font-size: 1em; }
 
 a:hover {
   color: hotpink; }
@@ -338,12 +337,19 @@ a:hover {
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;
-  padding: 2rem;
-  width: fit-content;
+  padding: 1.5rem;
+  width: 300px;
   height: fit-content;
   margin: 1em auto;
-  width: fit-content;
-  background-color: black; }
+  background-color: black;
+  transition: 0.5s; }
+
+ul, li, a {
+  font-weight: 300;
+  color: aliceblue;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 img {
   width: 300px;
@@ -351,16 +357,35 @@ img {
   box-shadow: 7px 5px 14px black;
   margin: 1em auto;
   display: block;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: 0.5s; }
 
 footer {
+  width: 300px;
+  text-align: center;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   box-shadow: 7px 5px 14px black;
   color: aliceblue;
   border-radius: 8%;
-  width: fit-content;
   margin: 1em auto;
   display: block;
   background-color: black;
   text-align: center;
+  padding: 1.5rem;
+  transition: 0.5s; }
+
+img:hover {
+  border-radius: 10%;
+  width: 320px; }
+
+h1:hover {
+  padding: 2rem;
+  font-size: 2.1rem; }
+
+#projects:hover {
+  padding: 2rem;
+  font-size: 1.1rem; }
+
+footer:hover {
+  font-size: 1.1rem;
   padding: 2rem; }
