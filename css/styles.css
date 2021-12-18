@@ -322,6 +322,11 @@ body {
 #darest {
   grid-column: 2; }
 
+iframe {
+  margin: 0 auto;
+  width: 300px;
+  height: auto; }
+
 h1 {
   text-align: center;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
@@ -345,11 +350,12 @@ h1 {
   grid-column: 1 / -1;
   grid-row: 1;
   width: 500px;
-  height: 850px;
+  height: 800px;
   object-fit: cover;
   box-shadow: 7px 5px 14px black;
   display: block;
-  border-radius: 0; }
+  border-radius: 0;
+  transition: 0.5s; }
 
 #christmas h2 {
   text-shadow: 2px 2px 3px #FF0000,-2px -2px 5px #00ad1d;
@@ -361,7 +367,8 @@ h1 {
 .christ {
   text-align: center;
   grid-column: 2;
-  grid-row: 1; }
+  grid-row: 1;
+  transition: 0.5s; }
 
 a {
   text-decoration: none;
@@ -399,10 +406,6 @@ img {
   transition: 0.5s; }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 90%;
-  height: 2.5rem;
   text-align: center;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   box-shadow: 7px 5px 14px black;
@@ -422,8 +425,8 @@ h1:hover {
   padding: 2rem;
   font-size: 2.1rem; }
 
-#christmas img:hover {
-  width: 400px; }
+.christ:hover {
+  font-size: 1.2rem; }
 
 #projects:hover {
   padding: 2rem;
