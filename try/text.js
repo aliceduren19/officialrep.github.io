@@ -15,3 +15,19 @@ fetch(requestURL)
 };
 
 getMoods();
+function add(x) {
+  let y=x+3
+  return y
+}
+function subtract(x) {
+  let y=x-3
+  return y
+}
+
+let elemP = document.createElement('p');
+elemP.textContent=add(100)
+let elemP2 = document.createElement('p');
+elemP2.textContent=subtract(100)
+
+document.body.appendChild(elemP);
+document.body.appendChild(elemP2);
